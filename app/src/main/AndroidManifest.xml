@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LinearlayoutActivity" />
-        <activity android:name=".RelativelayoutActivity"></activity>
+        <activity android:name=".RelativelayoutActivity" />
+        <activity android:name=".TextViewActivity"></activity>
     </application>
 
 </manifest>

@@ -8,8 +8,12 @@
 
 ***
 
-## Content
+## Contents
 
 - LinearLayout(left) & RelativeLayout(right)
 
 ![](https://pic.taifua.com/Picture/android/linearandrelative.png)
+
+- TextView
+
+![](https://pic.taifua.com/Picture/android/textview.png)

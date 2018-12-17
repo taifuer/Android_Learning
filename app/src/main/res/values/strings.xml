@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidLearning</string>
+    <string name="text_taifu">你好，太傅</string>
 </resources>
