@@ -1,2 +1,6 @@
 # Android_Learning
-跟“天哥在奔跑”学习安卓开发基础知识。
+## Description
+
+跟[天哥在奔跑](https://www.jianshu.com/p/cd569bb2e3ef)学习Android开发基础知识的代码记录，同时练习Git的使用。
+
+![](https://pic.taifua.com/Picture/android/androidlearning.png)
