@@ -10,6 +10,6 @@
 
 ## Content
 
-- LinearLayout
+- LinearLayout(left) & RelativeLayout(right)
 
-![](https://pic.taifua.com/Picture/android/linearlayout.png)
+![](https://pic.taifua.com/Picture/android/linearandrelative.png)

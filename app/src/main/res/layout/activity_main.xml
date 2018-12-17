@@ -13,4 +13,10 @@
         android:textSize="18dp"
         />
 
+    <Button
+        android:id="@+id/btn_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RelativeLayout"
+        android:textSize="18dp"/>
 </LinearLayout>
