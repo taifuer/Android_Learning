@@ -8,6 +8,14 @@
 
 ***
 
+## Resources
+
+- Material Design ICON: [https://github.com/google/material-design-icons](https://github.com/google/material-design-icons)
+
+- Material Design Color: [https://www.materialpalette.com](https://www.materialpalette.com)
+
+***
+
 ## Contents
 
 - LinearLayout(left) & RelativeLayout(right)
@@ -17,3 +25,7 @@
 - TextView(left) & Button(right)
 
 ![](https://pic.taifua.com/Picture/android/textviewandbutton.png)
+
+- EditText(login page)
+
+![](https://pic.taifua.com/Picture/android/edittexts.png)

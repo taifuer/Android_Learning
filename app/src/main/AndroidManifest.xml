@@ -19,7 +19,8 @@
         <activity android:name=".LinearlayoutActivity" />
         <activity android:name=".RelativelayoutActivity" />
         <activity android:name=".TextViewActivity" />
-        <activity android:name=".ButtonActivity"></activity>
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".EditTextActivity"></activity>
     </application>
 
 </manifest>
