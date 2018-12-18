@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnTextView;
     private Button mBtnButton;
     private Button mBtnEditText;
+    private Button mBtnRatioButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity
         mBtnTextView = findViewById(R.id.btn_textview);
         mBtnButton = findViewById(R.id.btn_button);
         mBtnEditText = findViewById(R.id.btn_edittext);
+        mBtnRatioButton = findViewById(R.id.btn_ratiobutton);
 
         setListeners();
     }
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity
         mBtnTextView.setOnClickListener(onClick);
         mBtnButton.setOnClickListener(onClick);
         mBtnEditText.setOnClickListener(onClick);
+        mBtnRatioButton.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -69,6 +72,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到EditText演示页面
                 case R.id.btn_edittext:
                     intent = new Intent(MainActivity.this, EditTextActivity.class);
+                    break;
+                // 跳转到RatioButton演示页面
+                case R.id.btn_ratiobutton:
+                    intent = new Intent(MainActivity.this, RatioButtonActivity.class);
                     break;
                 default:
                     break;

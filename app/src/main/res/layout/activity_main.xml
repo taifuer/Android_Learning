@@ -40,4 +40,11 @@
         android:layout_height="wrap_content"
         android:text="EditText"
         android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btn_ratiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RatioButton"
+        android:textSize="18dp"/>
 </LinearLayout>

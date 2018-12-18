@@ -20,7 +20,8 @@
         <activity android:name=".RelativelayoutActivity" />
         <activity android:name=".TextViewActivity" />
         <activity android:name=".ButtonActivity" />
-        <activity android:name=".EditTextActivity"></activity>
+        <activity android:name=".EditTextActivity" />
+        <activity android:name=".RatioButtonActivity"></activity>
     </application>
 
 </manifest>
