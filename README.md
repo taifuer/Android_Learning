@@ -14,6 +14,6 @@
 
 ![](https://pic.taifua.com/Picture/android/linearandrelative.png)
 
-- TextView
+- TextView(left) & Button(right)
 
-![](https://pic.taifua.com/Picture/android/textview.png)
+![](https://pic.taifua.com/Picture/android/textviewandbutton.png)

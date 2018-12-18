@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnLinearlayout;
     private Button mBtnRelativelayout;
     private Button mBtnTextView;
+    private Button mBtnButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity
         mBtnLinearlayout = findViewById(R.id.btn_linearlayout);
         mBtnRelativelayout = findViewById(R.id.btn_relativelayout);
         mBtnTextView = findViewById(R.id.btn_textview);
+        mBtnButton = findViewById(R.id.btn_button);
 
         setListeners();
     }
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity
         mBtnLinearlayout.setOnClickListener(onClick);
         mBtnRelativelayout.setOnClickListener(onClick);
         mBtnTextView.setOnClickListener(onClick);
+        mBtnButton.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -55,6 +58,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到TextView演示页面
                 case R.id.btn_textview:
                     intent = new Intent(MainActivity.this, TextViewActivity.class);
+                    break;
+                // 跳转到Button演示页面
+                case R.id.btn_button:
+                    intent = new Intent(MainActivity.this, ButtonActivity.class);
                     break;
                 default:
                     break;
