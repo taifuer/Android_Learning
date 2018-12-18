@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnEditText;
     private Button mBtnRatioButton;
     private Button mBtnCheckBox;
+    private Button mBtnImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity
         mBtnEditText = findViewById(R.id.btn_edittext);
         mBtnRatioButton = findViewById(R.id.btn_ratiobutton);
         mBtnCheckBox = findViewById(R.id.btn_checkbox);
+        mBtnImageView = findViewById(R.id.btn_image_view);
 
         setListeners();
     }
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity
         mBtnEditText.setOnClickListener(onClick);
         mBtnRatioButton.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
+        mBtnImageView.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -83,6 +86,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到CheckBox演示页面
                 case R.id.btn_checkbox:
                     intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    break;
+                // 跳转到ImageView演示页面
+                case R.id.btn_image_view:
+                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
                 default:
                     break;

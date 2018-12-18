@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_1"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:background="#FF9900"
+        android:src="@drawable/xinyuanjieyi"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/iv_2"
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:background="#FF9900"
+        android:src="@drawable/xinyuanjieyi"
+        android:layout_toRightOf="@id/iv_1"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:id="@+id/iv_3"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="#FF9900"
+        android:src="@drawable/xinyuanjieyi"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/iv_1"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/iv_4"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="#FF9900"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/iv_3"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
