@@ -47,4 +47,11 @@
         android:layout_height="wrap_content"
         android:text="RatioButton"
         android:textSize="18dp"/>
+
+    <Button
+        android:id="@+id/btn_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textSize="18dp"/>
 </LinearLayout>

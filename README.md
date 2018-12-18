@@ -29,3 +29,8 @@
 - EditText(login page)
 
 ![](https://pic.taifua.com/Picture/android/edittexts.png)
+
+- RatioButton(left.bug) & CheckBox(right)
+
+![](https://pic.taifua.com/Picture/android/ratiobuttonandcheckbox.png)
+

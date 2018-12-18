@@ -21,7 +21,8 @@
         <activity android:name=".TextViewActivity" />
         <activity android:name=".ButtonActivity" />
         <activity android:name=".EditTextActivity" />
-        <activity android:name=".RatioButtonActivity"></activity>
+        <activity android:name=".RatioButtonActivity" />
+        <activity android:name=".CheckBoxActivity"></activity>
     </application>
 
 </manifest>

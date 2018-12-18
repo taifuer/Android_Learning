@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnButton;
     private Button mBtnEditText;
     private Button mBtnRatioButton;
+    private Button mBtnCheckBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity
         mBtnButton = findViewById(R.id.btn_button);
         mBtnEditText = findViewById(R.id.btn_edittext);
         mBtnRatioButton = findViewById(R.id.btn_ratiobutton);
+        mBtnCheckBox = findViewById(R.id.btn_checkbox);
 
         setListeners();
     }
@@ -42,6 +44,7 @@ public class MainActivity extends AppCompatActivity
         mBtnButton.setOnClickListener(onClick);
         mBtnEditText.setOnClickListener(onClick);
         mBtnRatioButton.setOnClickListener(onClick);
+        mBtnCheckBox.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -76,6 +79,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到RatioButton演示页面
                 case R.id.btn_ratiobutton:
                     intent = new Intent(MainActivity.this, RatioButtonActivity.class);
+                    break;
+                // 跳转到CheckBox演示页面
+                case R.id.btn_checkbox:
+                    intent = new Intent(MainActivity.this, CheckBoxActivity.class);
                     break;
                 default:
                     break;

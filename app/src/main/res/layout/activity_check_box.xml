@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湖南省内你会选择哪所大学？"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湖南大学"
+        android:textSize="20sp"
+        android:layout_below="@+id/tv_title"/>
+
+    <CheckBox
+        android:id="@+id/cb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中南大学"
+        android:textSize="20sp"
+        android:layout_below="@+id/cb_1"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国防科技大学"
+        android:textSize="20sp"
+        android:layout_below="@+id/cb_2"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湖南师范大学"
+        android:textSize="20sp"
+        android:layout_below="@+id/cb_3"
+        android:layout_marginTop="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="其他"
+        android:textSize="20sp"
+        android:layout_below="@+id/cb_4"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/cb_5"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的兴趣？"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="计算机科学与技术"
+            android:button="@drawable/bg_ckeckbox"
+            android:paddingLeft="5sp"
+            android:textSize="20sp"/>
+
+        <CheckBox
+            android:id="@+id/cb_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="数学与应用数学"
+            android:button="@drawable/bg_ckeckbox"
+            android:paddingLeft="5sp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通信工程"
+            android:button="@drawable/bg_ckeckbox"
+            android:paddingLeft="5sp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
