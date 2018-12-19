@@ -1,10 +1,8 @@
-# Android_Learning
+# Android_Learning(Beta)
 
 ## Description
 
-跟[天哥在奔跑](https://www.jianshu.com/p/cd569bb2e3ef)学习Android开发基础知识，同时练习Git的使用:  )
-
-![](https://pic.taifua.com/Picture/android/androidlearning.png)
+在完成基础要求的同时，自定义某些内容以加强理解。
 
 ***
 
@@ -18,22 +16,6 @@
 
 ## Contents
 
-- LinearLayout(left) & RelativeLayout(right)
+- ListView(Customize content)
 
-![](https://pic.taifua.com/Picture/android/linearandrelative.png)
-
-- TextView(left) & Button(right)
-
-![](https://pic.taifua.com/Picture/android/textviewandbutton.png)
-
-- EditText(login page)
-
-![](https://pic.taifua.com/Picture/android/edittexts.png)
-
-- RatioButton(left.bug) & CheckBox(right)
-
-![](https://pic.taifua.com/Picture/android/ratiobuttonandcheckbox.png)
-
-- ImageView(left) & ListView(right)
-
-![](https://pic.taifua.com/Picture/android/imageviewandlistview.png)
+![](https://pic.taifua.com/Picture/android/listviews.png)
