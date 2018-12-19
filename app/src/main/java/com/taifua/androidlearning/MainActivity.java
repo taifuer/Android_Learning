@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnImageView;
     private Button mBtnListView;
     private Button mBtnGridView;
+    private Button mBtnScrollView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -39,6 +40,7 @@ public class MainActivity extends AppCompatActivity
         mBtnImageView = findViewById(R.id.btn_image_view);
         mBtnListView = findViewById(R.id.btn_list_view);
         mBtnGridView = findViewById(R.id.btn_grid_view);
+        mBtnScrollView = findViewById(R.id.btn_scroll_view);
 
         setListeners();
     }
@@ -57,6 +59,7 @@ public class MainActivity extends AppCompatActivity
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
+        mBtnScrollView.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -107,6 +110,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到GridView演示页面
                 case R.id.btn_grid_view:
                     intent = new Intent(MainActivity.this, GridViewActivity.class);
+                    break;
+                // 跳转到ScrollView演示页面
+                case R.id.btn_scroll_view:
+                    intent = new Intent(MainActivity.this, ScrollViewActivity.class);
                     break;
                 default:
                     break;

@@ -8,6 +8,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
+
         <Button
             android:id="@+id/btn_linearlayout"
             android:layout_width="match_parent"
@@ -78,12 +79,53 @@
             android:text="GridView"
             android:textSize="18dp"/>
 
-        <Button
-            android:id="@+id/btn_scroll_view"
-            android:layout_width="match_parent"
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ScrollView"
-            android:textSize="18dp"/>
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:background="#FF9900"
+                    android:src="@drawable/xinyuanjieyi"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/iv_2"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:background="#FF9900"
+                    android:src="@drawable/xinyuanjieyi"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/iv_3"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:background="#FF9900"
+                    android:src="@drawable/xinyuanjieyi"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/iv_4"
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:background="#FF9900"
+                    android:src="@drawable/xinyuanjieyi"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+            
+        </HorizontalScrollView>
+
     </LinearLayout>
 
 </ScrollView>

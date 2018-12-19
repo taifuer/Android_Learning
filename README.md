@@ -37,3 +37,7 @@
 - ImageView(left) & ListView(right)
 
 ![](https://pic.taifua.com/Picture/android/imageviewandlistview.png)
+
+- GridView(left) & ScrollView(right)
+
+![](https://pic.taifua.com/Picture/android/gridandscroll.png)

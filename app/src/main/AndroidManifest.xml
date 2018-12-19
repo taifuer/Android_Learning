@@ -27,7 +27,8 @@
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
-        <activity android:name=".gridview.GridViewActivity"></activity>
+        <activity android:name=".gridview.GridViewActivity" />
+        <activity android:name=".ScrollViewActivity"></activity>
     </application>
 
 </manifest>
