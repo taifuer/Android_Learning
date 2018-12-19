@@ -1,4 +1,4 @@
-package com.taifua.androidlearning;
+package com.taifua.androidlearning.gridview;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,14 +9,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.taifua.androidlearning.R;
 
-public class MyListAdapter extends BaseAdapter
+public class MyGridAdapter extends BaseAdapter
 {
-
     private Context mContext;
     private LayoutInflater mLayoutInflater;
 
-    public MyListAdapter(Context context)
+    public MyGridAdapter(Context context)
     {
         this.mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
@@ -25,7 +25,7 @@ public class MyListAdapter extends BaseAdapter
     @Override
     public int getCount()
     {
-        return 10;
+        return 15;
     }
 
     @Override
@@ -43,7 +43,7 @@ public class MyListAdapter extends BaseAdapter
     static class ViewHolder
     {
         public ImageView imageView;
-        public TextView tvTitle, tvTime, tvContent;
+        public TextView textView;
     }
 
     @Override
@@ -52,20 +52,16 @@ public class MyListAdapter extends BaseAdapter
         ViewHolder holder = null;
         if (view == null)
         {
-            view = mLayoutInflater.inflate(R.layout.layout_list_item, null);
+            view = mLayoutInflater.inflate(R.layout.layout_grid_item, null);
             holder = new ViewHolder();
-            holder.imageView = view.findViewById(R.id.iv);
-            holder.tvTitle = view.findViewById(R.id.tv_title);
-            holder.tvTime = view.findViewById(R.id.tv_time);
-            holder.tvContent = view.findViewById(R.id.tv_content);
+            holder.imageView = view.findViewById(R.id.iv_grid);
+            holder.textView = view.findViewById(R.id.iv_title);
             view.setTag(holder);
         }
         else
             holder = (ViewHolder) view.getTag();
-        holder.tvTitle.setText("安卓应用开发");
-        holder.tvTime.setText("2018-12-19");
-        holder.tvContent.setText("面朝大海，春暖花开");
-        Glide.with(mContext).load("https://pic.taifua.com/me/material-1.png").into(holder.imageView);
+        holder.textView.setText("头像");
+        Glide.with(mContext).load("https://pic.taifua.com/Picture/links/mps.jpg").into(holder.imageView);
         return view;
     }
 }

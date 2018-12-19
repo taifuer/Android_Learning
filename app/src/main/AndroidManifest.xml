@@ -26,7 +26,8 @@
         <activity android:name=".RatioButtonActivity" />
         <activity android:name=".CheckBoxActivity" />
         <activity android:name=".ImageViewActivity" />
-        <activity android:name=".ListViewActivity"></activity>
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity"></activity>
     </application>
 
 </manifest>
