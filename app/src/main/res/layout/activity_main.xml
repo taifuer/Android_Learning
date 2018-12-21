@@ -51,11 +51,18 @@
             android:textSize="18dp" />
 
         <Button
+            android:id="@+id/btn_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ScrollView"
+            android:textSize="18dp" />
+
+        <Button
             android:id="@+id/btn_ratiobutton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="RatioButton"
-            android:textSize="18dp"/>
+            android:textSize="18dp" />
 
         <Button
             android:id="@+id/btn_checkbox"
@@ -79,11 +86,12 @@
             android:textSize="18dp"/>
 
         <Button
-            android:id="@+id/btn_scroll_view"
+            android:id="@+id/btn_recycle_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ScrollView"
+            android:text="RecycleView"
             android:textSize="18dp"/>
+
     </LinearLayout>
 
 </ScrollView>

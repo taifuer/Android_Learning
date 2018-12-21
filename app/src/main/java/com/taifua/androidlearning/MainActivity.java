@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import com.taifua.androidlearning.gridview.GridViewActivity;
 import com.taifua.androidlearning.listview.ListViewActivity;
+import com.taifua.androidlearning.recycleview.RecycleViewActivity;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnScrollView;
+    private Button mBtnRecycleView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity
         mBtnListView = findViewById(R.id.btn_list_view);
         mBtnGridView = findViewById(R.id.btn_grid_view);
         mBtnScrollView = findViewById(R.id.btn_scroll_view);
+        mBtnRecycleView = findViewById(R.id.btn_recycle_view);
 
         setListeners();
     }
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
         mBtnScrollView.setOnClickListener(onClick);
+        mBtnRecycleView.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -114,6 +118,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到ScrollView演示页面
                 case R.id.btn_scroll_view:
                     intent = new Intent(MainActivity.this, ScrollViewActivity.class);
+                    break;
+                // 跳转到RecycleView演示页面
+                case R.id.btn_recycle_view:
+                    intent = new Intent(MainActivity.this, RecycleViewActivity.class);
                     break;
                 default:
                     break;

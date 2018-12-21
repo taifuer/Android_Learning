@@ -28,7 +28,9 @@
         <activity android:name=".ImageViewActivity" />
         <activity android:name=".listview.ListViewActivity" />
         <activity android:name=".gridview.GridViewActivity" />
-        <activity android:name=".ScrollViewActivity"></activity>
+        <activity android:name=".ScrollViewActivity" />
+        <activity android:name=".recycleview.RecycleViewActivity" />
+        <activity android:name=".recycleview.LinearRecycleViewActivity"></activity>
     </application>
 
 </manifest>
