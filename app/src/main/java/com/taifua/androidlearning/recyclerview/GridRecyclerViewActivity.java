@@ -1,4 +1,4 @@
-package com.taifua.androidlearning.recycleview;
+package com.taifua.androidlearning.recyclerview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.taifua.androidlearning.R;
 
-public class GridRecycleViewActivity extends AppCompatActivity
+public class GridRecyclerViewActivity extends AppCompatActivity
 {
 
     private RecyclerView mRvGrid;
@@ -20,14 +20,14 @@ public class GridRecycleViewActivity extends AppCompatActivity
         setContentView(R.layout.activity_grid_recycle);
 
         mRvGrid = findViewById(R.id.rv_grid);
-        mRvGrid.setLayoutManager(new GridLayoutManager(GridRecycleViewActivity.this, 3));
+        mRvGrid.setLayoutManager(new GridLayoutManager(GridRecyclerViewActivity.this, 3));
 
-        mRvGrid.setAdapter(new GridAdapter(GridRecycleViewActivity.this, new GridAdapter.OnItemClickListener()
+        mRvGrid.setAdapter(new GridAdapter(GridRecyclerViewActivity.this, new GridAdapter.OnItemClickListener()
         {
             @Override
             public void onClick(int pos)
             {
-                Toast.makeText(GridRecycleViewActivity.this, "click: " + pos, Toast.LENGTH_SHORT).show();
+                Toast.makeText(GridRecyclerViewActivity.this, "click: " + pos, Toast.LENGTH_SHORT).show();
             }
         }));
     }

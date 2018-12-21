@@ -42,6 +42,10 @@
 
 ![](https://pic.taifua.com/Picture/android/gridandscroll.png)
 
-- RecycleView(Linear, Horizontal, Grid)
+- RecyclerView(Linear & Horizontal & Grid)
 
 ![](https://pic.taifua.com/Picture/android/linearrecycleandgridrecycle.png)
+
+- RecyclerView(Waterfalls flow(left)  & Different ViewHolder(right))
+
+![](https://pic.taifua.com/Picture/android/purecyclerandviewholder.png)

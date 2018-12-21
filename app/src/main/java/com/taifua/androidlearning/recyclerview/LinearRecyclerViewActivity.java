@@ -1,4 +1,4 @@
-package com.taifua.androidlearning.recycleview;
+package com.taifua.androidlearning.recyclerview;
 
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.taifua.androidlearning.R;
 
-public class LinearRecycleViewActivity extends AppCompatActivity
+public class LinearRecyclerViewActivity extends AppCompatActivity
 {
 
     private RecyclerView mRvMain;
@@ -23,14 +23,14 @@ public class LinearRecycleViewActivity extends AppCompatActivity
         setContentView(R.layout.activity_linear_recycle_view);
 
         mRvMain = findViewById(R.id.rv_main);
-        mRvMain.setLayoutManager(new LinearLayoutManager(LinearRecycleViewActivity.this));
+        mRvMain.setLayoutManager(new LinearLayoutManager(LinearRecyclerViewActivity.this));
         mRvMain.addItemDecoration(new MyDecoration());
-        mRvMain.setAdapter(new LinearAdapter(LinearRecycleViewActivity.this, new LinearAdapter.OnItemClickListener()
+        mRvMain.setAdapter(new LinearAdapter(LinearRecyclerViewActivity.this, new LinearAdapter.OnItemClickListener()
         {
             @Override
             public void onClick(int pos)
             {
-                Toast.makeText(LinearRecycleViewActivity.this, "click..." + pos, Toast.LENGTH_SHORT).show();
+                Toast.makeText(LinearRecyclerViewActivity.this, "click..." + pos, Toast.LENGTH_SHORT).show();
             }
         }));
     }

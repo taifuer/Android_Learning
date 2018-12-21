@@ -1,4 +1,4 @@
-package com.taifua.androidlearning.recycleview;
+package com.taifua.androidlearning.recyclerview;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -26,7 +26,7 @@ public class GridAdapter extends RecyclerView.Adapter<GridAdapter.LinearViewHold
     @Override
     public GridAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i)
     {
-        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recycle_item, viewGroup, false));
+        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_grid_recycler_item, viewGroup, false));
     }
 
     @Override

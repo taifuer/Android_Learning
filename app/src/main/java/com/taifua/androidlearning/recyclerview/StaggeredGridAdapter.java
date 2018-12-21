@@ -6,17 +6,18 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.taifua.androidlearning.R;
 
-public class HorAdapter extends RecyclerView.Adapter<HorAdapter.LinearViewHolder>
+public class StaggeredGridAdapter extends RecyclerView.Adapter<StaggeredGridAdapter.LinearViewHolder>
 {
 
     private Context mContext;
     private OnItemClickListener mListener;
 
-    public HorAdapter(Context context, OnItemClickListener listener)
+    public StaggeredGridAdapter(Context context, OnItemClickListener listener)
     {
         this.mContext = context;
         this.mListener = listener;
@@ -24,15 +25,18 @@ public class HorAdapter extends RecyclerView.Adapter<HorAdapter.LinearViewHolder
 
     @NonNull
     @Override
-    public HorAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i)
+    public StaggeredGridAdapter.LinearViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i)
     {
-        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_hor_item, viewGroup, false));
+        return new LinearViewHolder(LayoutInflater.from(mContext).inflate(R.layout.layout_staggeredgrid_recycler_item, viewGroup, false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull HorAdapter.LinearViewHolder viewHolder, final int i)
+    public void onBindViewHolder(@NonNull StaggeredGridAdapter.LinearViewHolder viewHolder, final int i)
     {
-        viewHolder.textView.setText("Hello, world!");
+        if (i % 2 == 0)
+            viewHolder.imageView.setImageResource(R.drawable.image2);
+        else
+            viewHolder.imageView.setImageResource(R.drawable.image1);
         viewHolder.itemView.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -47,18 +51,18 @@ public class HorAdapter extends RecyclerView.Adapter<HorAdapter.LinearViewHolder
     @Override
     public int getItemCount()
     {
-        return 20;
+        return 50;
     }
 
     class LinearViewHolder extends RecyclerView.ViewHolder
     {
 
-        private TextView textView;
+        private ImageView imageView;
 
         public LinearViewHolder(@NonNull View itemView)
         {
             super(itemView);
-            textView = itemView.findViewById(R.id.tv_title);
+            imageView = itemView.findViewById(R.id.iv);
         }
     }
 

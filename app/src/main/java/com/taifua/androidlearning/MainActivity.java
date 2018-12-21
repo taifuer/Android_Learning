@@ -8,7 +8,7 @@ import android.widget.Button;
 
 import com.taifua.androidlearning.gridview.GridViewActivity;
 import com.taifua.androidlearning.listview.ListViewActivity;
-import com.taifua.androidlearning.recycleview.RecycleViewActivity;
+import com.taifua.androidlearning.recyclerview.RecyclerViewActivity;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity
                     break;
                 // 跳转到RecycleView演示页面
                 case R.id.btn_recycle_view:
-                    intent = new Intent(MainActivity.this, RecycleViewActivity.class);
+                    intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                     break;
                 default:
                     break;
