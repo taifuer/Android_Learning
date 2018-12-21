@@ -41,3 +41,7 @@
 - GridView(left) & ScrollView(right)
 
 ![](https://pic.taifua.com/Picture/android/gridandscroll.png)
+
+- RecycleView(Linear, Horizontal, Grid)
+
+![](https://pic.taifua.com/Picture/android/linearrecycleandgridrecycle.png)

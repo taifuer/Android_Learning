@@ -30,7 +30,9 @@
         <activity android:name=".gridview.GridViewActivity" />
         <activity android:name=".ScrollViewActivity" />
         <activity android:name=".recycleview.RecycleViewActivity" />
-        <activity android:name=".recycleview.LinearRecycleViewActivity"></activity>
+        <activity android:name=".recycleview.LinearRecycleViewActivity" />
+        <activity android:name=".recycleview.HorRecycleActivity" />
+        <activity android:name=".recycleview.GridRecycleViewActivity"></activity>
     </application>
 
 </manifest>
