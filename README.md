@@ -49,3 +49,7 @@
 - RecyclerView(Waterfalls flow(left)  & Different ViewHolder(right))
 
 ![](https://pic.taifua.com/Picture/android/purecyclerandviewholder.png)
+
+- WebView
+
+![](https://pic.taifua.com/Picture/android/webview.png)

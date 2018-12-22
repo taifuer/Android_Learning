@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnGridView;
     private Button mBtnScrollView;
     private Button mBtnRecycleView;
+    private Button mBtnWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity
         mBtnGridView = findViewById(R.id.btn_grid_view);
         mBtnScrollView = findViewById(R.id.btn_scroll_view);
         mBtnRecycleView = findViewById(R.id.btn_recycle_view);
+        mBtnWebView = findViewById(R.id.btn_web_view);
 
         setListeners();
     }
@@ -64,6 +66,7 @@ public class MainActivity extends AppCompatActivity
         mBtnGridView.setOnClickListener(onClick);
         mBtnScrollView.setOnClickListener(onClick);
         mBtnRecycleView.setOnClickListener(onClick);
+        mBtnWebView.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -122,6 +125,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到RecycleView演示页面
                 case R.id.btn_recycle_view:
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                // 跳转到WebView演示页面
+                case R.id.btn_web_view:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
                     break;
                 default:
                     break;
