@@ -98,6 +98,13 @@
             android:layout_height="wrap_content"
             android:text="WebView"
             android:textSize="18dp"/>
+
+        <Button
+            android:id="@+id/btn_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toast"
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </ScrollView>

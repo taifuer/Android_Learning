@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     private Button mBtnScrollView;
     private Button mBtnRecycleView;
     private Button mBtnWebView;
+    private Button mBtnToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity
         mBtnScrollView = findViewById(R.id.btn_scroll_view);
         mBtnRecycleView = findViewById(R.id.btn_recycle_view);
         mBtnWebView = findViewById(R.id.btn_web_view);
+        mBtnToast = findViewById(R.id.btn_toast);
 
         setListeners();
     }
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity
         mBtnScrollView.setOnClickListener(onClick);
         mBtnRecycleView.setOnClickListener(onClick);
         mBtnWebView.setOnClickListener(onClick);
+        mBtnToast.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -129,6 +132,10 @@ public class MainActivity extends AppCompatActivity
                 // 跳转到WebView演示页面
                 case R.id.btn_web_view:
                     intent = new Intent(MainActivity.this, WebViewActivity.class);
+                    break;
+                // 跳转到Toast页面
+                case R.id.btn_toast:
+                    intent = new Intent(MainActivity.this, ToastActivity.class);
                     break;
                 default:
                     break;
