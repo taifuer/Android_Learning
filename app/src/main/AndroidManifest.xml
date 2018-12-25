@@ -35,7 +35,9 @@
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />
         <activity android:name=".recyclerview.PuRecyclerViewActivity" />
         <activity android:name=".WebViewActivity" />
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".ToastActivity" />
+        <activity android:name=".UIActivity" />
+        <activity android:name=".DialogActivity"></activity>
     </application>
 
 </manifest>

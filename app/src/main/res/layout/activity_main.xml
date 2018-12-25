@@ -1,110 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/btn_ui_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
-        <Button
-            android:id="@+id/btn_linearlayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="LinearLayout"
-            android:textSize="18dp" />
+        android:text="UIView"
+        android:textSize="18dp"/>
 
-        <Button
-            android:id="@+id/btn_relativelayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RelativeLayout"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_textview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="EditText"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_image_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ImageView"
-            android:textSize="18dp" />
-
-        <Button
-            android:id="@+id/btn_scroll_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ScrollView"
-            android:textSize="18dp" />
-
-        <Button
-            android:id="@+id/btn_ratiobutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RatioButton"
-            android:textSize="18dp" />
-
-        <Button
-            android:id="@+id/btn_checkbox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="CheckBox"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_list_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ListView"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_grid_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GridView"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_recycle_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RecycleView"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_web_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="WebView"
-            android:textSize="18dp"/>
-
-        <Button
-            android:id="@+id/btn_toast"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Toast"
-            android:textSize="18sp"/>
-    </LinearLayout>
-
-</ScrollView>
+</LinearLayout>
