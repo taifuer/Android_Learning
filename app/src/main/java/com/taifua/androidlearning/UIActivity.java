@@ -31,6 +31,7 @@ public class UIActivity extends AppCompatActivity
     private Button mBtnToast;
     private Button mBtnDialog;
     private Button mBtnProgress;
+    private Button mBtnCustomDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -54,7 +55,7 @@ public class UIActivity extends AppCompatActivity
         mBtnToast = findViewById(R.id.btn_toast);
         mBtnDialog = findViewById(R.id.btn_dialog);
         mBtnProgress = findViewById(R.id.btn_progress);
-
+        mBtnCustomDialog = findViewById(R.id.btn_custom_dialog);
         setListeners();
     }
 
@@ -78,6 +79,7 @@ public class UIActivity extends AppCompatActivity
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
         mBtnProgress.setOnClickListener(onClick);
+        mBtnCustomDialog.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -152,6 +154,10 @@ public class UIActivity extends AppCompatActivity
                 // 跳转到Progress页面
                 case R.id.btn_progress:
                     intent = new Intent(UIActivity.this, ProgressActivity.class);
+                    break;
+                // 跳转到CustomDialog页面
+                case R.id.btn_custom_dialog:
+                    intent = new Intent(UIActivity.this, CustomDialogActivity.class);
                     break;
                 default:
                     break;

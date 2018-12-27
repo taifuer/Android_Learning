@@ -119,6 +119,13 @@
             android:layout_height="wrap_content"
             android:text="Progress"
             android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_custom_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CustomDialog"
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </ScrollView>

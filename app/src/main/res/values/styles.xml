@@ -12,4 +12,9 @@
         <item name="android:indeterminateDrawable">@drawable/bg_progress</item>
     </style>
 
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:color">@color/colorTransparent</item>
+    </style>
 </resources>

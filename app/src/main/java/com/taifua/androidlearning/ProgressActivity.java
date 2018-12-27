@@ -67,7 +67,7 @@ public class ProgressActivity extends AppCompatActivity
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i)
                     {
-                        
+
                     }
                 });
                 progressDialog.show();
