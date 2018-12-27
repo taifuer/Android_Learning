@@ -8,4 +8,8 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/bg_progress</item>
+    </style>
+
 </resources>

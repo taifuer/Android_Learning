@@ -37,7 +37,8 @@
         <activity android:name=".WebViewActivity" />
         <activity android:name=".ToastActivity" />
         <activity android:name=".UIActivity" />
-        <activity android:name=".DialogActivity"></activity>
+        <activity android:name=".DialogActivity" />
+        <activity android:name=".ProgressActivity"></activity>
     </application>
 
 </manifest>

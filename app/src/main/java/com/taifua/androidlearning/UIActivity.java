@@ -1,10 +1,12 @@
 package com.taifua.androidlearning;
 
+import android.app.UiAutomation;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 import com.taifua.androidlearning.gridview.GridViewActivity;
 import com.taifua.androidlearning.listview.ListViewActivity;
@@ -28,6 +30,7 @@ public class UIActivity extends AppCompatActivity
     private Button mBtnWebView;
     private Button mBtnToast;
     private Button mBtnDialog;
+    private Button mBtnProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -50,6 +53,7 @@ public class UIActivity extends AppCompatActivity
         mBtnWebView = findViewById(R.id.btn_web_view);
         mBtnToast = findViewById(R.id.btn_toast);
         mBtnDialog = findViewById(R.id.btn_dialog);
+        mBtnProgress = findViewById(R.id.btn_progress);
 
         setListeners();
     }
@@ -73,6 +77,7 @@ public class UIActivity extends AppCompatActivity
         mBtnWebView.setOnClickListener(onClick);
         mBtnToast.setOnClickListener(onClick);
         mBtnDialog.setOnClickListener(onClick);
+        mBtnProgress.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -143,6 +148,10 @@ public class UIActivity extends AppCompatActivity
                 // 跳转到Dialog页面
                 case R.id.btn_dialog:
                     intent = new Intent(UIActivity.this, DialogActivity.class);
+                    break;
+                // 跳转到Progress页面
+                case R.id.btn_progress:
+                    intent = new Intent(UIActivity.this, ProgressActivity.class);
                     break;
                 default:
                     break;
