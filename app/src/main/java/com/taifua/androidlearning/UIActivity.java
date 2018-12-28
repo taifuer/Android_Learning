@@ -32,6 +32,7 @@ public class UIActivity extends AppCompatActivity
     private Button mBtnDialog;
     private Button mBtnProgress;
     private Button mBtnCustomDialog;
+    private Button mBtnPopupWindow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -56,6 +57,7 @@ public class UIActivity extends AppCompatActivity
         mBtnDialog = findViewById(R.id.btn_dialog);
         mBtnProgress = findViewById(R.id.btn_progress);
         mBtnCustomDialog = findViewById(R.id.btn_custom_dialog);
+        mBtnPopupWindow = findViewById(R.id.btn_popup_window);
         setListeners();
     }
 
@@ -80,6 +82,7 @@ public class UIActivity extends AppCompatActivity
         mBtnDialog.setOnClickListener(onClick);
         mBtnProgress.setOnClickListener(onClick);
         mBtnCustomDialog.setOnClickListener(onClick);
+        mBtnPopupWindow.setOnClickListener(onClick);
     }
 
     // 实现监听器接口
@@ -158,6 +161,10 @@ public class UIActivity extends AppCompatActivity
                 // 跳转到CustomDialog页面
                 case R.id.btn_custom_dialog:
                     intent = new Intent(UIActivity.this, CustomDialogActivity.class);
+                    break;
+                // 跳转到PopupWindow页面
+                case R.id.btn_popup_window:
+                    intent = new Intent(UIActivity.this, PopupWindowActivity.class);
                     break;
                 default:
                     break;

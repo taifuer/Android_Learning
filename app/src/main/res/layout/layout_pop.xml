@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_good"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorGrayDark"
+        android:text="好"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark"/>
+
+    <TextView
+        android:id="@+id/tv_notbad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorGrayDark"
+        android:text="还行"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark"/>
+
+    <TextView
+        android:id="@+id/tv_bad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/colorGrayDark"
+        android:text="不好"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"/>
+</LinearLayout>

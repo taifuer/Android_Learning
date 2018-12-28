@@ -39,7 +39,8 @@
         <activity android:name=".UIActivity" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".ProgressActivity" />
-        <activity android:name=".CustomDialogActivity"></activity>
+        <activity android:name=".CustomDialogActivity" />
+        <activity android:name=".PopupWindowActivity"></activity>
     </application>
 
 </manifest>

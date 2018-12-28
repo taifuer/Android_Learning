@@ -126,6 +126,13 @@
             android:layout_height="wrap_content"
             android:text="CustomDialog"
             android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_popup_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PopupWindow"
+            android:textSize="18sp"/>
     </LinearLayout>
 
 </ScrollView>
